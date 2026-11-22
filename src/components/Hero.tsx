@@ -79,10 +79,7 @@ export default function Hero() {
             />
             <div className="flex items-center gap-3 px-3 py-4">
               <span className="status-dot" aria-hidden="true" />
-              <div>
-                <p className="text-sm font-semibold">Terbuka untuk peran junior Cloud dan DevOps</p>
-                <p className="mt-0.5 font-mono text-xs text-subtle">{site.location}</p>
-              </div>
+              <p className="text-sm font-semibold">{site.name}</p>
             </div>
           </div>
         </div>
