@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import About from "@/components/About";
+import Certificates from "@/components/Certificates";
 import Contact from "@/components/Contact";
 import Courses from "@/components/Courses";
 import Footer from "@/components/Footer";
@@ -36,6 +37,7 @@ export default function Home() {
         <Suspense>
           <Courses />
         </Suspense>
+        <Certificates />
         <Suspense>
           <Contact />
         </Suspense>

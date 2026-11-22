@@ -1,5 +1,5 @@
 import { projects } from "@/data/projects";
-import { learningPaths, repos, site } from "@/data/site";
+import { certifications, learningPaths, repos, site } from "@/data/site";
 
 export function GET() {
   return Response.json(
@@ -11,6 +11,12 @@ export function GET() {
       contact: { email: site.email, github: site.github, linkedin: site.linkedin, dicoding: site.dicoding },
       repositories: repos.map((r) => r.url),
       learning_paths: learningPaths,
+      certifications: certifications.map((c) => ({
+        name: c.name,
+        issuer: c.issuer,
+        issued: c.issuedISO,
+        verify: c.verify,
+      })),
       projects: projects.map((p) => ({
         id: p.id,
         title: p.title,

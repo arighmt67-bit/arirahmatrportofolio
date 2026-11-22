@@ -18,6 +18,7 @@ export const navLinks = [
   { id: "proyek", label: "Proyek" },
   { id: "simulator", label: "Simulator" },
   { id: "kelas", label: "Kelas" },
+  { id: "sertifikat", label: "Sertifikat" },
   { id: "kontak", label: "Kontak" },
 ];
 
@@ -68,6 +69,22 @@ export const learningPaths = [
   {
     name: "Python dan Data",
     courses: ["Belajar Fundamental Back-End dengan Python", "Belajar Fundamental Pemrosesan Data"],
+  },
+];
+
+export const certifications = [
+  {
+    id: "aws-restart",
+    name: "AWS re/Start Graduate",
+    issuer: "Amazon Web Services Training and Certification",
+    partner: "Orbit Future Academy",
+    issued: "10 Juni 2026",
+    issuedISO: "2026-06-10",
+    kind: "Badge kelulusan program",
+    criteria: "Menyelesaikan pelatihan IT Fundamentals, AWS Cloud, dan keterampilan profesional.",
+    skills: ["AWS Cloud", "Amazon Web Services", "Cloud Platform", "Cloud Services"],
+    image: { src: "/badges/aws-restart.png", width: 600, height: 600 },
+    verify: "https://www.credly.com/badges/d1022466-a030-484b-92b0-51abc0194285/public_url",
   },
 ];
 

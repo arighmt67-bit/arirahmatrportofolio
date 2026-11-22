@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <section id="kontak" aria-labelledby="kontak-title" className="border-t border-line bg-mist">
       <div className="container-x py-24 md:py-28">
-        <p className="eyebrow">Kontak • (06)</p>
+        <p className="eyebrow">Kontak • (07)</p>
         <h2 id="kontak-title" className="section-title">
           Mari ngobrol soal peluang kerja.
         </h2>
