@@ -1,5 +1,7 @@
 import { projects } from "@/data/projects";
-import { learningPaths, site } from "@/data/site";
+import { dicodingCertificates, learningPaths, site } from "@/data/site";
+
+const certByCourse = Object.fromEntries(dicodingCertificates.map((c) => [c.course, c]));
 import { ProjectChip } from "./ClientButtons";
 
 export default function Courses() {
@@ -21,7 +23,19 @@ export default function Courses() {
                 const list = projects.filter((p) => p.course === c || p.courses?.includes(c));
                 return (
                   <li key={c} className="border-t border-line pt-4 first:border-0 first:pt-0">
-                    <p className="font-medium">{c}</p>
+                    <div className="flex flex-wrap items-center justify-between gap-x-3">
+                      <p className="font-medium">{c}</p>
+                      {certByCourse[c] && (
+                        <a
+                          href={certByCourse[c].url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-link font-mono text-xs"
+                        >
+                          Sertifikat ✓ ↗<span className="sr-only"> {c}</span>
+                        </a>
+                      )}
+                    </div>
                     <div className="mt-2 flex flex-wrap gap-2">
                       {list.map((p) => (
                         <ProjectChip key={p.id} id={p.id} label={p.title} />

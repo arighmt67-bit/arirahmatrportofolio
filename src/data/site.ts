@@ -88,4 +88,14 @@ export const certifications = [
   },
 ];
 
+export const dicodingCertificates = [
+  { id: "81P2OGJWNZOY", course: "Belajar Jaringan Komputer untuk Pemula", level: "Pemula", hours: 25, issued: "12 Februari 2026", issuedISO: "2026-02-12", valid: "12 Februari 2029", validISO: "2029-02-12", url: "https://www.dicoding.com/certificates/81P2OGJWNZOY" },
+  { id: "KEXLM84ORZG2", course: "Menjadi Linux System Administrator", level: "Menengah", hours: 25, issued: "25 Agustus 2026", issuedISO: "2026-08-25", valid: "25 Agustus 2029", validISO: "2029-08-25", url: "https://www.dicoding.com/certificates/KEXLM84ORZG2" },
+  { id: "EYX4O0R4JXDL", course: "Belajar Implementasi CI/CD", level: "Menengah", hours: 30, issued: "27 Agustus 2026", issuedISO: "2026-08-27", valid: "27 Agustus 2029", validISO: "2029-08-27", url: "https://www.dicoding.com/certificates/EYX4O0R4JXDL" },
+  { id: "MRZMV8G0LZYQ", course: "Belajar Membangun Arsitektur Microservices", level: "Mahir", hours: 60, issued: "28 Agustus 2026", issuedISO: "2026-08-28", valid: "28 Agustus 2029", validISO: "2029-08-28", url: "https://www.dicoding.com/certificates/MRZMV8G0LZYQ" },
+  { id: "JMZVLDMROXN9", course: "Menjadi Google Cloud Engineer", level: "Menengah", hours: 42, issued: "6 September 2026", issuedISO: "2026-09-06", valid: "6 September 2029", validISO: "2029-09-06", url: "https://www.dicoding.com/certificates/JMZVLDMROXN9" },
+];
+
+export const certificateCount = certifications.length + dicodingCertificates.length;
+
 export const courseCount = learningPaths.reduce((n, p) => n + p.courses.length, 0);

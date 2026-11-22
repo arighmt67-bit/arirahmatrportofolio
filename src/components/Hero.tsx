@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { courseCount, site } from "@/data/site";
-import { pillarOrder, projects } from "@/data/projects";
+import { certificateCount, courseCount, site } from "@/data/site";
+import { projects } from "@/data/projects";
 import Typewriter from "./Typewriter";
 
 const focus = [
@@ -15,7 +15,7 @@ export default function Hero() {
   const stats = [
     { value: projects.length, label: "proyek" },
     { value: courseCount, label: "kelas Dicoding" },
-    { value: pillarOrder.length, label: "bidang" },
+    { value: certificateCount, label: "sertifikat" },
   ];
 
   return (
