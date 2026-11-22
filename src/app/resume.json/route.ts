@@ -7,6 +7,7 @@ export function GET() {
       name: site.name,
       location: site.location,
       focus: ["DevOps", "Cloud", "Security", "Backend"],
+      cv: `${site.url}${site.cv}`,
       contact: { email: site.email, github: site.github, linkedin: site.linkedin, dicoding: site.dicoding },
       repositories: repos.map((r) => r.url),
       learning_paths: learningPaths,

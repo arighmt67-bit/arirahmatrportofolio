@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <section id="beranda" aria-labelledby="hero-title" className="container-x pb-16 pt-28 md:pb-24 md:pt-36">
       <div className="grid items-center gap-12 lg:grid-cols-[1.3fr_1fr]">
-        <div className="fade-up">
+        <div>
           <p className="eyebrow">Cloud · DevOps · Security · Backend</p>
           <h1
             id="hero-title"
@@ -52,8 +52,8 @@ export default function Hero() {
             <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
               LinkedIn ↗
             </a>
-            <a href={`mailto:${site.email}`} className="btn btn-ghost">
-              Email
+            <a href={site.cv} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
+              Download CV ↓
             </a>
           </div>
           <dl className="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-line pt-6">
@@ -66,7 +66,7 @@ export default function Hero() {
             ))}
           </dl>
         </div>
-        <div className="fade-up mx-auto w-full max-w-sm [animation-delay:120ms]">
+        <div className="mx-auto w-full max-w-sm">
           <div className="card overflow-hidden p-2">
             <Image
               src="/ari.jpg"

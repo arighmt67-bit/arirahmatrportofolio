@@ -9,6 +9,7 @@ export default function Contact() {
     { label: "LinkedIn", value: "in/ari-rahmat-romadhon", href: site.linkedin },
     { label: "GitHub", value: "arighmt67-bit", href: site.github },
     { label: "Dicoding", value: "arijhmtr", href: site.dicoding },
+    { label: "CV", value: "PDF, 3 halaman", href: site.cv },
   ];
   return (
     <section id="kontak" aria-labelledby="kontak-title" className="border-t border-line bg-mist">

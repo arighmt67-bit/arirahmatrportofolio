@@ -1,9 +1,10 @@
+import { Suspense } from "react";
 import About from "@/components/About";
-import CommandPalette from "@/components/CommandPalette";
 import Contact from "@/components/Contact";
 import Courses from "@/components/Courses";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import { LazyCommandPalette } from "@/components/Lazy";
 import Nav from "@/components/Nav";
 import PipelineLab from "@/components/PipelineLab";
 import Projects from "@/components/Projects";
@@ -20,15 +21,27 @@ export default function Home() {
       <main id="konten">
         <Hero />
         <Ticker />
-        <About />
-        <Skills />
-        <Projects />
-        <PipelineLab />
-        <Courses />
-        <Contact />
+        <Suspense>
+          <About />
+        </Suspense>
+        <Suspense>
+          <Skills />
+        </Suspense>
+        <Suspense>
+          <Projects />
+        </Suspense>
+        <Suspense>
+          <PipelineLab />
+        </Suspense>
+        <Suspense>
+          <Courses />
+        </Suspense>
+        <Suspense>
+          <Contact />
+        </Suspense>
       </main>
       <Footer />
-      <CommandPalette />
+      <LazyCommandPalette />
     </>
   );
 }

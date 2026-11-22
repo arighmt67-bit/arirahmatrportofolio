@@ -50,7 +50,7 @@ export default function Nav() {
             type="button"
             onClick={() => window.dispatchEvent(new Event(OPEN_PALETTE))}
             className="icon-btn gap-2 px-3"
-            aria-label="Cari proyek atau bagian (Ctrl+K)"
+            aria-label="Cari proyek ⌘K"
           >
             <SearchIcon />
             <kbd className="hidden font-mono text-xs sm:inline">⌘K</kbd>
@@ -60,12 +60,12 @@ export default function Nav() {
             <MoonIcon className="theme-moon" />
           </button>
           <a
-            href={site.github}
+            href={site.cv}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary btn-sm hidden sm:inline-flex"
           >
-            GitHub ↗
+            CV ↗
           </a>
           <button
             type="button"

@@ -10,7 +10,7 @@ function topTech(limit: number) {
 }
 
 export default function Ticker() {
-  const items = topTech(22);
+  const items = topTech(14);
   return (
     <div className="ticker" role="region" aria-label="Teknologi yang dipakai di proyek">
       <div className="ticker-track">

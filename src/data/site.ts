@@ -6,6 +6,7 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/ari-rahmat-romadhon/",
   dicoding: "https://www.dicoding.com/users/arijhmtr/academies",
   url: "https://arirahmatrportofolio.vercel.app",
+  cv: "/cv-ari-rahmat-romadhon.pdf",
   title: "Ari Rahmat Romadhon | Cloud, DevOps & Security",
   description:
     "Portofolio Ari Rahmat Romadhon: proyek submission Dicoding di bidang DevOps, Cloud, Security, dan Backend, lengkap dengan cara kerja, bukti, dan batasannya.",
